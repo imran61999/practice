@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>event summary dom</title>
+</head>
+
+<body>
+    <h1>events dom summary</h1>
+    <button onclick="onclickfunnction()">Handel event by onclick function</button>
+
+    <p id="input-text-display">Default event text</p>
+    <input id="input-text" type="text">
+    <br>
+    <br>
+    <button id="btn-update">Update</button>
+
+    <script>
+        function onclickfunction() {
+            console.log("clicked");
+        }
+
+        document.getElementById('btn-update').addEventListener('click', function updatebtn() {
+            const updatetext = document.getElementById('input-text');
+            const updatefiled = updatetext.value;
+
+            const p = document.getElementById('input-text-display');
+            p.innerText = updatefiled;
+
+
+
+        })
+    </script>
+</body>
+
+</html>
