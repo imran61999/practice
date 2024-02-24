@@ -6,3 +6,19 @@ const products ={
     ]
 }
 console.log(products.data[1].price);
+
+// nested object
+const student = {
+    id: 90,
+    name: 'imran',
+    address:{
+        city:'chittagong',
+        parmanent:{
+            first: 'rungonia',
+            second: 'pomra',
+            third: 'kondokar para'
+        }
+    }
+}
+
+console.log(student.address.parmanent.third)
