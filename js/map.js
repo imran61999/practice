@@ -19,3 +19,4 @@ const result = numbers.map(doubleIt);
 
 // arrow function
 const defult = numbers.map(n => n*2);
+

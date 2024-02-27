@@ -26,7 +26,9 @@
 // const value = [];
 // console.log(!!value);
 
-falsy value : false , 0 , "" , null , undefined
-truthy value : true , "imran" , 123 , 
-const value = -1;
+// falsy value : false , 0 , "" , null , undefined
+const value = "";
+console.log(!!value);
+// truthy value : true , "imran" , 123 , -123 , [] , {}
+const value = [];
 console.log(!!value);
