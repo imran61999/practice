@@ -38,8 +38,13 @@ const saceproducttolocalstorage = (product , quantity) => {
 }
 
 const displayproductsfromlocalstorage = () =>{
-    const savecart =getstoedshoppingcart();
-    console.log(savecart);
+    const savedcart =getstoedshoppingcart();
+    console.log(savedcart);
+    for(const product in savedcart){
+        const quantity = savedcart[product];
+        console.log(product , quantity);
+        displayProduct(product , quantity);
+    }
 }
 
 displayproductsfromlocalstorage();
